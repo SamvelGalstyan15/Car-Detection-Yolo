@@ -1,0 +1,4 @@
+names:  0: car
+path: /kaggle/working/yolo_dataset
+train: images/train
+val: images/val
