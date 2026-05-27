@@ -71,7 +71,6 @@ Place the `best.pt` file into your local project folder.
 ```python
 from ultralytics import YOLO
 import matplotlib.pyplot as plt
-import matplotlib.image as img
 
 
 model = YOLO('best.pt')
