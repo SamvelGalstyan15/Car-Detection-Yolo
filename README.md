@@ -62,8 +62,11 @@ yolo_dataset/
 pip install ultralytics opencv-python matplotlib
 ```
 
-### 2. Local Inference Script
-Place your trained weight file `best.pt` in your project folder and run the following script to test the model:
+### ⏬ Download Model Weights
+Before running the script, download the trained weights file:
+* **[Download best.pt from Google Drive](https://drive.google.com/file/d/1nHpAfTq8GzmQ0BLxElW9svHHGD8_ogMH/view?usp=drive_link)**
+
+Place the `best.pt` file into your local project folder.
 
 ```python
 from ultralytics import YOLO
@@ -77,7 +80,7 @@ model = YOLO('best.pt')
 results = model.predict(source='path_to_your_image.jpg', save=True, conf=0.4)
 
 
-result_img = img.imread('runs/detect/predict/path_to_your_image.jpg')
+result_img = plt.imread('runs/detect/predict/path_to_your_image.jpg')
 plt.figure(figsize=(10, 7))
 plt.imshow(result_img)
 plt.axis('off')
